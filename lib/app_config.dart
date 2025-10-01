@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:testapp/all_screen.dart';
 import 'package:testapp/core/controller/app_translation.dart';
 import 'package:testapp/features/messages/presentation/screen/chat_screen.dart';
 import 'package:testapp/features/messages/presentation/screen/messages_screen.dart';
@@ -24,7 +25,7 @@ class CounterApp extends StatelessWidget {
       translations: AppTranslation(),
       locale: const Locale('en', 'US'), // Default locale
       fallbackLocale: const Locale('en', 'US'),
-      home: ChatScreen(),
+      home: AllScreen(),
     );
   }
 }

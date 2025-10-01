@@ -72,7 +72,9 @@ class _ChatScreenState extends State<ChatScreen> {
           ),
         ),
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
           icon: Icon(LucideIcons.chevronLeft),
         ),
         title: Row(

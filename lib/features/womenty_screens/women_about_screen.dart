@@ -30,7 +30,7 @@ class WomenAboutScreen extends StatelessWidget {
             color: Color(0xFF374C44),
             onPressed: () {
               debugPrint("Back button pressed");
-              //Navigator.pop(context);
+              Navigator.pop(context);
             },
           ),
         ),

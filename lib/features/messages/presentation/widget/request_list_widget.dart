@@ -3,33 +3,11 @@ import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:testapp/features/messages/data/request_list_data.dart';
 
 class RequestListWidget extends StatelessWidget {
-  const RequestListWidget({super.key});
+  final List<RequestListData> reqData;
+  const RequestListWidget({super.key, required this.reqData});
 
   @override
   Widget build(BuildContext context) {
-    final List<RequestListData> reqData = [];
-    // final List<RequestListData> reqData = [
-    //   RequestListData(
-    //     imagePath: "assets/images/g1.jpg",
-    //     personName: "Oliver",
-    //     reqNote: "Sent you a message request",
-    //   ),
-    //   RequestListData(
-    //     imagePath: "assets/images/g1.jpg",
-    //     personName: "Oliver",
-    //     reqNote: "Sent you a message request",
-    //   ),
-    //   RequestListData(
-    //     imagePath: "assets/images/g1.jpg",
-    //     personName: "Oliver",
-    //     reqNote: "Sent you a message request",
-    //   ),
-    //   RequestListData(
-    //     imagePath: "assets/images/g1.jpg",
-    //     personName: "Oliver",
-    //     reqNote: "Sent you a message request",
-    //   ),
-    // ];
     if (reqData.isNotEmpty) {
       return Container(
         height: 600,
